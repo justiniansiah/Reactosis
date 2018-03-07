@@ -76,32 +76,32 @@ body, html {
 --------------------------------------------------*/
 
 table {
-	border-collapse: collapse;
+  border-collapse: collapse;
 }
 
 th {
-	border: 1px solid black;
-	padding:5px;
-	text-align:center;
+  border: 1px solid black;
+  padding:5px;
+  text-align:center;
 }
 
 td {
-	border: 1px solid black;
-	padding:5px;
-	text-align:left;
+  border: 1px solid black;
+  padding:5px;
+  text-align:left;
 }
 
 body {
-	font-family: Calibri;
+  font-family: Calibri;
 }
 
 table.center {
-	padding: 1rem 1.5rem;
-	margin-top: 3rem;
-	margin-bottom: 1rem;
-  	margin-left:auto;
-  	margin-right:auto;
-  	text-align: center;
+  padding: 1rem 1.5rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
 }
 
 /* Buttons
