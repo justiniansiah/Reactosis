@@ -1,13 +1,16 @@
+/*mission statement css*/
+
 body, html {
     height: 100%;
 }
 
 .bg { 
     /* The image used */
-    background-image: url("main.jpg");
+    background-image: url("Capture.png");
 
     /* Full height */
-    height: 100%; 
+    height: 20%; 
+
 
     /* Center and scale the image nicely */
     background-position: center;
@@ -17,91 +20,15 @@ body, html {
     opacity: 0.85;
 }
 
-.title {
-  position: absolute;
-  left: 0;
-  top: 15%;
-  width: 100%;
-  font: "Lato", sans-serif;
-  text-align: center;
-  color: #000;
-  font-size: 30px;
-  letter-spacing: 10px;
-}
-
-.title span.border {
-  background-color: #111;
-  opacity: 0.75;
-  color: #fff;
-  padding: 18px;
-}
-
-.container {
-  background-color: #111;
-  width: auto;
-  max-width: 300px;
-  padding: 5px 15px;
-}
-
-.container span.border{
-  opacity: 0.75;
-  color:#fff;
-
-}
-
-.desc_main {
-  position: absolute;
-  width: 40%;
-  text-align: center;
-  color: #000;
-}
-
-.desc1 {
-  top: 80%;
-  left: 2rem;
-}
-
-.desc2 {
-  top: 80%;
-  right: 2rem;
-}
-
-.desc3 {
-  top: 95%;
-  right: 2rem;
-}
-
-
-/* Main
---------------------------------------------------*/
-
-table {
-  border-collapse: collapse;
-}
-
-th {
-  border: 1px solid black;
-  padding:5px;
-  text-align:center;
-}
-
-td {
-  border: 1px solid black;
-  padding:5px;
-  text-align:left;
-}
-
-body {
-  font-family: Calibri;
-}
-
-table.center {
-  padding: 1rem 1.5rem;
-  margin-top: 3rem;
-  margin-bottom: 1rem;
-    margin-left:auto;
-    margin-right:auto;
-    text-align: center;
+.center {
+    display: block;
+    position: absolute;
+    top: -999px;            /* use sufficiently large number */
+    bottom: -999px;
+    left: -999px;
+    right: -999px;
+    margin: auto;
+    width: 80%;
 }
 
 /* Buttons
@@ -114,16 +41,27 @@ table.center {
 
 .picbtn_left{
   position: absolute;
-  top:52%;
+  top:80%;
 }
 
 .nextbtn_right{
   position: absolute;
   width:100px;
-  top:50%;
+  top:80%;
   right:5rem;
   background-color: transparent;
-  color: #fff;
+  color: #000;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 30px;
+}
+
+.nextbtn_left{
+  position: absolute;
+  width:100px;
+  top:80%;
+  left:5rem;
+  background-color: transparent;
+  color: #000;
   font-family: "Arial Black", Gadget, sans-serif;
   font-size: 30px;
 }
@@ -144,15 +82,14 @@ table.center {
 
 .btn-right {
   display: inline-block;
-  //color: #000;
-  //background-color: #fff;
+  /*color: #fff;
+  background-color: #fff;*/
   border-color: #000;
   border: none;
   transition: all 0.5s;
   cursor: pointer;
   margin: 10px;
   margin-right: 0;
-  padding: 10px;
 }
 
 .btn-right span {
@@ -181,14 +118,15 @@ table.center {
 }
 
 .btn-left {
-  color: #000;
-  background-color: #fff;
+  display: inline-block;
+  /*color: #000;
+  background-color: #fff;*/
   border-color: #000;
-  border: 2px solid;
+  border: none;
   color: black;
   transition: all 0.5s;
   cursor: pointer;
-  margin: 5px;
+  margin: 10px;
   margin-left: 0;
 }
 
@@ -216,4 +154,3 @@ table.center {
   opacity: 1;
   left: 0;
 }
-

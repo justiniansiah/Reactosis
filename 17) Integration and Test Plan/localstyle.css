@@ -1,0 +1,39 @@
+/*Integration and Test Plan CSS*/
+
+h2{
+	padding:auto;
+	margin-left: 1rem;
+}
+
+.nextbtn_right{
+  position: absolute;
+  width:100px;
+  top:80%;
+  right:5rem;
+  background-color: transparent;
+  color: #000;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 30px;
+}
+
+.nextbtn_left{
+  position: absolute;
+  width:100px;
+  top:80%;
+  left:5rem;
+  background-color: transparent;
+  color: #000;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 30px;
+}
+
+.picbtn{
+  background-color: transparent;
+  border:none;
+}
+
+.picbtn_right{
+  position: absolute;
+  right:3rem;
+  top:82%;
+}
