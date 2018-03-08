@@ -3,7 +3,25 @@
 h2{
 	padding:auto;
 	margin-left: 1rem;
+  font-size:40px;
 }
+
+.container_text{
+  width: auto;
+  max-width: 1000px;
+  margin-left:20px;
+  margin-bottom: 50px;
+}
+
+.container_table{
+  width: auto;
+  margin-bottom: 50px;
+}
+
+.divcenter{
+  text-align: center;
+}
+
 
 .nextbtn_right{
   position: absolute;
@@ -26,3 +44,23 @@ h2{
   font-family: "Arial Black", Gadget, sans-serif;
   font-size: 30px;
 }
+
+.button{
+  width:200px;
+  background-color: transparent;
+  border:none;
+  color: #000;
+  font-size: 20px;
+}
+
+#affinity{
+  width: 300px;
+  }
+
+#personas{
+  width: 300px;
+  margin-top:50px;
+  margin-left: 50px;
+}
+
+
