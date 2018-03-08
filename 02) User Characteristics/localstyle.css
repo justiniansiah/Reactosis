@@ -7,6 +7,26 @@ h2{
   font-size:40px;
 }
 
+table{ 
+  height:100vh;
+  overflow-y: auto;
+}
+
+thead{
+  border:solid 3px;
+  background-color: #fdf6b4;
+}
+
+th{
+  border:solid 1px;
+  background-color: #fef9cd;
+  color: #000;
+}
+
+tbody{
+
+}
+
 .container_text{
   width: auto;
   max-width: 1000px;
@@ -16,8 +36,10 @@ h2{
 
 .container_table{
   width: auto;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   margin-left:5px;
+  overflow-y: auto;
+  height: 400px;
 }
 
 .divcenter{
