@@ -30,6 +30,7 @@
 
 		<div class = "wrapper">
 			<div class = "container" id="tableofcontent">
+				<p style="font-size:12px; margin:0px;">Bookmark bar (Click to jump to section)</p>
 				<h3>Nominal Use Cases</h3>
 				<ol>
 					<li><a href="#N1" class="colorless">Player fulfills mission</a></li>
@@ -45,66 +46,321 @@
 				</ol>
 			</div>
 
+			<div id = "contentwrapper">
 			<div class = "container" id="actualcontent">
-				<h3 id="N1">1. Player fulfills mission (players discuss and agree on the validity)</h3>
-				<p><u>Initial Condition</u></p>
-				<p>- Player lands on the mission square.</p>
-				<p>- Player has the corresponding element card in his hand.</p>
-				<br />
-				<table>
-					<tr id="N1 Header">
-						<th>Player</th>
-						<th>Other Platers</th>
-						<th>Element Cards</th>
-						<th>Token</th>
-					</tr>
 
-					<tr id="N1 Row1">
-						<td>Player checks the cards in his hand and select one card</td>
-						<td>&nbsp</td>
-						<td>&nbsp</td>
-						<td>&nbsp</td>
-					</tr>
+				<p class="title" id="N1">Nominal Use Cases</p>
 
-					<tr id="N1 Row2">
-						<td>&nbsp</td>
-						<td>&nbsp</td>
-						<td>The element card will be shown to other players</td>
-						<td>&nbsp</td>
-					</tr>
+				<div class ="container">
+					<h3>1. Player fulfills mission (players discuss and agree on the validity)</h3>
+					<p><u>Initial Condition</u></p>
+					<p>- Player lands on the mission square.</p>
+					<p>- Player has the corresponding element card in his hand.</p>
+					<br />
+					<table class = "size4">
+						<tr id="N1 Header">
+							<th>Player</th>
+							<th>Other Platers</th>
+							<th>Element Cards</th>
+							<th>Token</th>
+						</tr>
 
-					<tr id="N1 Row3">
-						<td>&nbsp</td>
-						<td>Other players discuss about whether the shown card is valid or not</td>
-						<td>&nbsp</td>
-						<td>&nbsp</td>
-					</tr>
+						<tr id="N1 Row1">
+							<td>Player checks the cards in his hand and select one card</td>
+							<td>&nbsp</td>
+							<td>&nbsp</td>
+							<td>&nbsp</td>
+						</tr>
 
-					<tr id="N1 Row4">
-						<td>&nbsp</td>
-						<td>&nbsp</td>
-						<td>&nbsp</td>
-						<td>One of the tokens will be awarded to the player if the card is valid</td>
-					</tr>
+						<tr id="N1 Row2">
+							<td>&nbsp</td>
+							<td>&nbsp</td>
+							<td>The element card will be shown to other players</td>
+							<td>&nbsp</td>
+						</tr>
 
-					<tr id="N1 Row5">
-						<td>&nbsp</td>
-						<td>&nbsp</td>
-						<td>A new element card will be given to player</td>
-						<td>&nbsp</td>
-					</tr>
-				</table>
+						<tr id="N1 Row3">
+							<td>&nbsp</td>
+							<td>Other players discuss about whether the shown card is valid or not</td>
+							<td>&nbsp</td>
+							<td>&nbsp</td>
+						</tr>
 
-				<br />
+						<tr id="N1 Row4">
+							<td>&nbsp</td>
+							<td>&nbsp</td>
+							<td>&nbsp</td>
+							<td>One of the tokens will be awarded to the player if the card is valid</td>
+						</tr>
 
-				<p><u>Ending Condition</u></p>
-				<p>- Player receives the token.</p>
-				<p>- Total number of cards in player’s hand is remained constant.</p>
-				<p>- Players employ deeper thinking about chemistry concepts through their discussions.</p>
-				
-			</div>
+						<tr id="N1 Row5">
+							<td>&nbsp</td>
+							<td>&nbsp</td>
+							<td>A new element card will be given to player</td>
+							<td>&nbsp</td>
+						</tr>
+					</table>
+
+					<br />
+
+					<p><u>Ending Condition</u></p>
+					<p>- Player receives the token.</p>
+					<p>- Total number of cards in player’s hand is remained constant.</p>
+					<p>- Players employ deeper thinking about chemistry concepts through their discussions.</p>
+				</div>
+
+				<br /><hr><br />
+
+				<div class ="container" id="N2">
+					<h3>2. Player pieces together current element tokens collected</h3>
+					<p><u>Initial Condition</u></p>
+					<p>- Player has fulfilled mission square.</p>
+					<br />
+					<table class = "size3">
+						<tr id="N2 Header">
+							<th>Player</th>
+							<th>Objective Card</th>
+							<th>Element Token</th>
+						</tr>
+
+						<tr id="N2 Row1">
+							<td>&nbsp</td>
+							<td>Objective card shows the player elements left required to complete mission </td>
+							<td>&nbsp</td>
+						</tr>
+
+						<tr id="N2 Row2">
+							<td>Player identifies a token to to take as reward</td>
+							<td>&nbsp</td>							
+							<td>&nbsp</td>
+						</tr>
+
+						<tr id="N2 Row3">
+							<td>&nbsp</td>
+							<td>&nbsp</td>
+							<td>Token is awarded to the player</td>
+						</tr>
+
+						<tr id="N2 Row4">
+							<td>Player pieces newly obtained token to the previously obtained ones</td>
+							<td>&nbsp</td>
+							<td>&nbsp</td>
+						</tr>
+					</table>
+
+					<br />
+
+					<p><u>Ending Condition</u></p>
+					<p>- Player fulfils a sub-part of his overall objective.</p>
+					<p>- Player gains hands-on experience of creating compound structure.</p>
+					<p>- Player gets an understanding of the 3D layout of chemical compounds.</p>
+				</div
+
+				<br /><hr><br />
+
+				<div class ="container" id="N3">
+					<h3>3. Player accomplish objective by building up the 3D compound</h3>
+					<p><u>Initial Condition</u></p>
+					<p>- Player has gathered all the pieces of token that are required for the 3D compound.</p>
+					<br />
+					<table class = "size4">
+						<tr id="N3 Header">
+							<th>Player</th>
+							<th>Other Players</th>
+							<th>Objective Card</th>
+							<th>Tokens</th>
+						</tr>
+
+						<tr id="N3 Row1">
+							<td>&nbsp</td>
+							<td>&nbsp</td>
+							<td>&nbsp</td>
+							<td>All the tokens will be combined into a compound</td>	
+						</tr>
+
+						<tr id="N3 Row2">
+							<td>&nbsp</td>							
+							<td>&nbsp</td>
+							<td>Objective card will be used as instruction</td>
+							<td>&nbsp</td>							
+						</tr>
+
+						<tr id="N3 Row3">
+							<td>Player declares that the objective has been accomplished</td>
+							<td>&nbsp</td>
+							<td>&nbsp</td>
+							<td>&nbsp</td>
+						</tr>
+
+						<tr id="N3 Row4">
+							<td>&nbsp</td>
+							<td>Other players will compare the Objective caed and the combined tokens</td>
+							<td>&nbsp</td>
+							<td>&nbsp</td>
+						</tr>
+
+						<tr id="N3 Row5">
+							<td>Player will declare the win if the objective is fulfilled correctly</td>
+							<td>&nbsp</td>
+							<td>&nbsp</td>
+							<td>&nbsp</td>
+						</tr>
+					</table>
+
+					<br />
+
+					<p><u>Ending Condition</u></p>
+					<p>- The game ends.</p>
+					<p>- Player gains spatial understanding of compound structures.</p>
+				</div>				
+			
+				<br /><hr><br />
+
+				<div class ="container" id="N4">
+					<h3>4. Player lands on a chance square (eg. that asks to discard a toxic element)</h3>
+					<p><u>Initial Condition</u></p>
+					<p>- Player is on chance square.</p>
+					<br />
+					<table class = "size3">
+						<tr id="N4 Header">
+							<th>Player</th>
+							<th>Chance Card</th>
+							<th>Element Card</th>
+						</tr>
+
+						<tr id="N4 Row1">
+							<td>&nbsp</td>
+							<td>Chance card is given to player</td>
+							<td>&nbsp</td>
+						</tr>
+
+						<tr id="N4 Row2">
+							<td>Player reads the contents of the chance card</td>		
+							<td>&nbsp</td>
+							<td>&nbsp</td>							
+						</tr>
+
+						<tr id="N4 Row3">
+							<td>Player decides which element card to use to fulfil chance card requirement</td>
+							<td>&nbsp</td>
+							<td>&nbsp</td>
+						</tr>
+
+						<tr id="N4 Row4">
+							<td>&nbsp</td>
+							<td>&nbsp</td>
+							<td>Replenishment element card given to player</td>	
+						</tr>
+					</table>
+
+					<br />
+
+					<p><u>Ending Condition</u></p>
+					<p>- Player ends turn.</p>
+					<p>- Player gains understanding of applications of the knowledge in real life.</p>
+				</div>				
+			
+				<br /><hr><hr><br />
+				<p class="title" id="ON1">Off-Nominal Use Cases</p>
+
+				<div class ="container">
+					<h3>1. One player leaves the game half-way</h3>
+					<p><u>Initial Condition</u></p>
+					<p>- The game is still in half-way.</p>
+					<br />
+					<table class = "size3">
+						<tr id="ON1 Header">
+							<th>Player</th>
+							<th>Element Cards</th>
+							<th>Tokens</th>
+						</tr>
+
+						<tr id="ON1 Row1">
+							<td>Player decides to leave the game</td>
+							<td>&nbsp</td>
+							<td>&nbsp</td>
+						</tr>
+
+						<tr id="ON1 Row2">
+							<td>Player announces the retirement from the game</td>		
+							<td>&nbsp</td>
+							<td>&nbsp</td>							
+						</tr>
+
+						<tr id="ON1 Row3">
+							<td>&nbsp</td>
+							<td>Element Cards are placed into the bottom of the deck</td>
+							<td>&nbsp</td>
+						</tr>
+
+						<tr id="ON1 Row4">
+							<td>&nbsp</td>
+							<td>&nbsp</td>
+							<td>Tokens collected are dismantled and returned back to the pile</td>	
+						</tr>
+					</table>
+
+					<br />
+
+					<p><u>Ending Condition</u></p>
+					<p>- Players continue to play with one less player.</p>
+				</div>				
+			
+				<br /><hr><br />
+
+				<div class ="container" id="ON2">
+					<h3>2. Player trades token with another player after fulfilling mission</h3>
+					<p><u>Initial Condition</u></p>
+					<p>- Player able to fulfill the mission but does not need any of the tokens available.</p>
+					<br />
+					<table class = "size3">
+						<tr id="ON1 Header">
+							<th>Player</th>
+							<th>Tokens</th>
+							<th>Other Player</th>
+						</tr>
+
+						<tr id="ON2 Row1">
+							<td>Player declares that he does not need any of the tokens available</td>
+							<td>&nbsp</td>
+							<td>&nbsp</td>
+						</tr>
+
+						<tr id="ON2 Row2">
+							<td>Player declares a token that he would like to have</td>
+							<td>&nbsp</td>
+							<td>&nbsp</td>							
+						</tr>
+
+						<tr id="ON2 Row3">
+							<td>&nbsp</td>
+							<td>&nbsp</td>
+							<td>Other player checks to see if he has the token the player mentioned</td>
+						</tr>
+
+						<tr id="ON2 Row4">
+							<td>&nbsp</td>
+							<td>&nbsp</td>
+							<td>Other player decides if he would like to trade for a token available on the mission square</td>	
+						</tr>
+
+						<tr id="ON2 Row5">
+							<td>&nbsp</td>
+							<td>Tokens are swapped </td>
+							<td>&nbsp/td>	
+						</tr>
+					</table>
+
+					<br />
+
+					<p><u>Ending Condition</u></p>
+					<p>- Player obtains token of choice.</p>
+				</div>				
+			
+				<br /><hr><br />
 
 
+			</div></div>
 
 		</div>	
 
