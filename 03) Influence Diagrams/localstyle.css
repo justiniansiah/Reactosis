@@ -11,6 +11,17 @@ h2{
   text-align: center;
 }
 
+.imgWrapper{
+  display: inline-flex;
+  width:100%; 
+  overflow: auto;
+  margin-top: 20px;
+}
+.imgContainer{
+  float:left;
+  margin-left:100px;
+}
+
 .nextbtn_right{
   position: absolute;
   width:100px;
