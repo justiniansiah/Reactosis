@@ -1,5 +1,7 @@
 /* Design Alternatives CSS */
 
+/*headers
+*****************/
 h2{
   padding:auto;
   margin-top:10px;
@@ -7,10 +9,71 @@ h2{
   font-size:40px;
 }
 
+h3{
+  font-size:25px;
+}
+
+/* tables 
+*****************/
+th{
+  min-width: 70px;
+  border:solid 1px;
+  background-color: #fdf6b4;
+  color: #000;
+}
+
+td{
+  height: 50px;
+}
+
+.table-hover tbody tr:hover td{
+  background-color: #fced69;
+
+}
+
+/* containers
+****************/
 .divcenter{
   text-align: center;
 }
 
+.wrapper{
+  display:flex;
+  overflow-x: auto;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1300px;
+}
+
+.container{
+}
+
+#designideas{
+  max-width: 200px; 
+  margin-left: 10px;
+  padding: 10px;
+}
+
+#contentwrapper{
+  margin-left: 20px;
+  padding:10px 30px;
+  max-width: 80vw;
+  width: 70vw;
+  overflow-y:auto;
+  background-color: #fefce6;
+  border:solid 1px;
+  max-height: 100vh;
+  overflow-y:auto;
+}
+
+#actualcontent{
+  max-width: 650px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+/* buttons 
+**************/
 .nextbtn_right{
   position: absolute;
   width:100px;
