@@ -20,6 +20,14 @@
 		<link rel="stylesheet" type="text/css" href="localstyle.css">
 		<link rel="stylesheet" type="text/css" href="../static/style.css">
 		<link rel="stylesheet" type="text/css" href="../static/jquery-easyui/themes/default/easyui.css">
+		<!--==========================================================================-->
+		<link rel="stylesheet" type="text/css" href="../static/table_layout/vendor/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../static/table_layout/vendor/animate/animate.css">
+		<link rel="stylesheet" type="text/css" href="../static/table_layout/vendor/select2/select2.min.css">
+		<link rel="stylesheet" type="text/css" href="../static/table_layout/vendor/perfect-scrollbar/perfect-scrollbar.css">
+		<link rel="stylesheet" type="text/css" href="../static/table_layout/css/util.css">
+		<link rel="stylesheet" type="text/css" href="../static/table_layout/css/main.css">
+		<!--==========================================================================-->
 
 		<!-- Javascript Js -->
 		<script src="../static/jquery-easyui/jquery.min.js"></script>
@@ -29,65 +37,195 @@
 
 	<body>
 		<!-- What is the name of this folder? -->
-		<h3>User Characteristics:</h3>
-		<h2>Affinity Diagram</h2>
-		<div class = "container_text">
-			We surveyed students, teachers and parents to get an understanding of the difficulties they faced in learning or teaching Chemistry. With that, we made an affinity diagram.
+		
+			<button	type="button" class = "btn-left nextbtn_left" onClick="location.href='index.html'"><span>Prev</span></button>
+		
+		<div style="margin:0px 50px;">
+			<h3>User Characteristics:</h3>
+			<h2>Affinity Diagram</h2>
+			<div class = "container_text">
+				We surveyed students, teachers and parents to get an understanding of the difficulties they faced in learning or teaching Chemistry. With that, we made an affinity diagram.
+			</div>
 		</div>
 
 		<div class = "container_table">
-			<table>
+			<table style="overflow: auto; overflow-x:auto;">
 				<!-- Add header row -->
-				<thread><tr>
+				<thead><tr>
 					<th colspan="3">Make the student's learning journey in Chemistry easier</th>
 					<th colspan="3">Better way to tackle Chemistry questions</th>
 					<th colspan="3">Allow students to experience Chemistry in real life</th>
 					<th colspan="2">Give students, parents and teachers a fun way to learn/teach chemistry</th>
-				</tr></thread>
+				</tr></thead>
 
-				<tr>
-					<td style="text-align:center">0</td>
-					<td><span title = "Our Cover Page">
-						<a href="00) Cover Page/index.html">Cover Page</a>
-					</span></td>
-					<td>
-						Team Number, Team Members, (Optional: Team Member Photos), Submission date, Course Name and Number, Team Name, Project Theme, ESD logo, Team logo
-					</td>
+				<tr id="Row 00 - Quality Attributes">
+					<td >Make other subjects also easier to learn</td>
+					<td>Make memorising easier</td>
+					<td>Make Chemistry easier to learn</td>
+					<td>Help me answer inference & reasoning questions better</td>
+					<td>I would like to know what are the important key points in answering questions</td>
+					<td>Help me tackle chemistry calculations better</td>
+					<td>Show me how Chem can be applied in my life</td>
+					<td>Help me get a visual understand of chemical compounds and reactions</td>
+					<td>I would like to have more hands-on experience</td>
+					<td>Make Chemistry fun to learn</td>
+					<td>Let me have a interactive way of teaching my child simple chemistry</td>
 				</tr>
 
-				<tr>
-					<td style="text-align:center">1</td>
-					<td><span title = "Our Goal">
-						<a href="01) Mission Statement/index.html">Mission Statement</a>
-					</span></td>
-					<td>
-						A solution-neutral statement of the problem area and goal
-					</td>
+				<tr id="Row 01">
+					<td >&nbsp</td>
+					<td>Why are there so many different properties within the periodic table</td>
+					<td>I find it difficult to pick up chemistry as i have no background</td>
+					<td>A lot of inference is needed when deducing the chemical compound</td>
+					<td>&nbsp</td>
+					<td>The hard part in chemistry is the need to use math </td>
+					<td>I dont see how chemistry is applicable in real life</td>
+					<td>I get confused with all the different types of chemical bonding, bond length and bond angle, size</td>
+					<td>Chemistry is fun as i get to go to the lab away from my textbook</td>
+					<td>Chemistry is plain boring</td>
+					<td>I need a fun way to teach my child Chemistry if i were to attempt teaching him at all</td>
 				</tr>
 
-				<tr>
-					<td style="text-align:center">2</td>
-					<td><span title = "Description of Target Audience">
-						<a href="02) User Characteristics/index.html">User Characteristics</a>
-					</span></td>
-					<td>
-						Affinity diagram based on at least 30 comments collected from interviews; Quality attributes; User persona; 
-					</td>
+				<tr id="Row 02">
+					<td >&nbsp</td>
+					<td>Too many reactions to memorize</td>
+					<td>Organic chem is so hard!</td>
+					<td>My students always get confused about oxidation number this kind of abstract concept.</td>
+					<td>&nbsp</td>
+					<td>Why is there math in chem...</td>
+					<td>I dont see how the theory part of chemistry connects with the practical part</td>
+					<td>I want to learn Chemistry in a way that I can visualize the reaction, not just reciting the equation.</td>
+					<td>Chemistry is fun as i get to experiment with chemicals and see how they changes.</td>
+					<td>I have difficulty in making chemistry lessons fun for my students</td>
+					<td>Chemistry bores even me, how can i teach my child then</td>
 				</tr>
 
-				<tr>
-					<td style="text-align:center">3</td>
-					<td><span title = "How our design solution will impact the mission">
-						<a href="03) Influence Diagrams/index.html">As-Is and To-Be Situation Maps (Influence Diagrams)</a>
-					</span></td>
-					<td>
-						Influence diagrams displaying a network of factors influencing the mission (the target success factor) and a path or pathways from the system intervention to the mission
-					</td>
+				<tr id="Row 03">
+					<td >&nbsp</td>
+					<td>My students always say that there are too many colors of solutions to remember</td>
+					<td>Students can learn concepts from each other and learn side by side</td>
+					<td>The questions are really long</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>I dont like to memorise the colour change</td>
+					<td>I like lab sessions because they are colouful and bright</td>
+					<td>I like playing games with my friends!</td>
+					<td>&nbsp</td>
+				</tr>
+
+				<tr id="Row 04">
+					<td >&nbsp</td>
+					<td>I would like to play a game that helps me with the memorisation of properties</td>
+					<td>&nbsp</td>
+					<td>The tests and reactions are so confusing</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>It'll be nice if there was an easier way to understand the mechanisms</td>
+					<td>Right now, i memorise chemistry content without actual understanding</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+				</tr>
+
+				<tr id="Row 05">
+					<td >&nbsp</td>
+					<td>i keep forgetting the chemical reactions</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>I want the game which allows my student to engage into Chemistry rather than just receive knowledge.</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+				</tr>
+
+				<tr id="Row 06">
+					<td >&nbsp</td>
+					<td>Each element has so many properties, i can't seem to remember everything</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+				</tr>
+
+				<tr id="Row 07">
+					<td >&nbsp</td>
+					<td>Sometimes i forget what group does what in the peroidic table</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+				</tr>
+
+				<tr id="Row 08">
+					<td >&nbsp</td>
+					<td>If only there was a way to help me learn and understand reactions and not memorising them</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+				</tr>
+
+				<tr id="Row 09">
+					<td >&nbsp</td>
+					<td>Students get confused over the naming of compounds</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+				</tr>
+
+				<tr id="Row 10">
+					<td >&nbsp</td>
+					<td>Sometimes I cannot remember the bond angles</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+				</tr>
+
+				<tr id="Row 11">
+					<td >&nbsp</td>
+					<td>Chemistry is fun in calculation but borning in remembering the periodical table.</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+					<td>&nbsp</td>
+				</tr>
 			</table>
-		</div>
-
-		<div>
-			<button	type="button" class = "btn-left nextbtn_left" onClick="location.href='index.html'"><span>Prev</span></button>
 		</div>
 
 		<!--

@@ -2,6 +2,7 @@
 
 h2{
 	padding:auto;
+  margin-top:10px;
 	margin-left: 1rem;
   font-size:40px;
 }
@@ -16,6 +17,7 @@ h2{
 .container_table{
   width: auto;
   margin-bottom: 50px;
+  margin-left:5px;
 }
 
 .divcenter{
@@ -23,26 +25,14 @@ h2{
 }
 
 
-.nextbtn_right{
-  position: absolute;
-  width:100px;
-  top:80%;
-  right:5rem;
-  background-color: transparent;
-  color: #000;
-  font-family: "Arial Black", Gadget, sans-serif;
-  font-size: 30px;
-}
-
 .nextbtn_left{
-  position: absolute;
   width:100px;
-  top:80%;
-  left:5rem;
+  left:1rem;
+  margin-bottom: 1px;
   background-color: transparent;
   color: #000;
   font-family: "Arial Black", Gadget, sans-serif;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .button{
@@ -63,4 +53,7 @@ h2{
   margin-left: 50px;
 }
 
-
+/* Table Formatting */
+td{
+  min-width:125px;
+ }
