@@ -2,27 +2,132 @@
 
 h2{
 	padding:auto;
+  margin-top:10px;
 	margin-left: 1rem;
+  font-size:40px;
 }
 
-.nextbtn_right{
-  position: absolute;
-  width:100px;
-  top:80%;
-  right:5rem;
-  background-color: transparent;
-  color: #000;
-  font-family: "Arial Black", Gadget, sans-serif;
-  font-size: 30px;
+table{ 
+  height:100vh;
+  overflow-y: auto;
 }
+
+thead{
+  border:solid 3px;
+  background-color: #fdf6b4;
+}
+
+th{
+  border:solid 1px;
+  background-color: #fef9cd;
+  color: #000;
+}
+
+tbody{
+
+}
+
+.container_text{
+  width: auto;
+  max-width: 1000px;
+  margin-left:20px;
+  margin-bottom: 50px;
+}
+
+.container_table{
+  width: auto;
+  margin-bottom: 10px;
+  margin-left:5px;
+  overflow-y: auto;
+  height: 400px;
+}
+
+.divcenter{
+  text-align: center;
+}
+
 
 .nextbtn_left{
-  position: absolute;
   width:100px;
-  top:80%;
-  left:5rem;
+  left:1rem;
+  margin-bottom: 1px;
   background-color: transparent;
   color: #000;
   font-family: "Arial Black", Gadget, sans-serif;
-  font-size: 30px;
+  font-size: 20px;
 }
+
+.button{
+  width:200px;
+  background-color: transparent;
+  border:none;
+  color: #000;
+  font-size: 20px;
+}
+
+#affinity{
+  width: 300px;
+  }
+
+#personas{
+  width: 300px;
+  margin-top:50px;
+  margin-left: 50px;
+}
+
+/* Table Formatting */
+td{
+  min-width:125px;
+ }
+
+.animate-opacity{
+  animation:opac 0.8s
+}@keyframes opac{from{opacity:0} to{opacity:1}}
+
+/* Personas Stuff */
+.container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.image {
+  opacity: 0.3;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  float: left;
+  margin:0px 20px;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.image:hover {
+  opacity: 1;
+}
+/*.container:hover .image {
+  opacity: 1;
+}*/
+
+.image_curr {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  float:left;
+  margin:0px 20px;
+}
+
