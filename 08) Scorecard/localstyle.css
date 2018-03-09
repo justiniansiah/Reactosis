@@ -24,15 +24,23 @@ h2{
 }
 
 .container{
+  margin-left: auto;
+  margin-right: auto;
+  padding:0px 50px;
+  max-width: 1000px;
 }
 
 /* tables 
 *****************/
 
 th{
+  border:solid 1px;
+  background-color: #fdf6b4;
 }
 
 td{
+  min-width: 200px;
+  text-align: center;
 }
 
 
