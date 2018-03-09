@@ -9,6 +9,10 @@ h2{
   font-size:40px;
 }
 
+p{
+  text-align: justify;
+}
+
 /* containers
 ****************/
 .divcenter{
@@ -26,8 +30,13 @@ h2{
 .container{
   margin-left: auto;
   margin-right: auto;
-  padding:0px 50px;
-  max-width: 1000px;
+  padding:0px 100px;
+  max-width: 700px;
+}
+
+#tablecontainer{
+  margin-top: 3rem;
+  max-width: 400px;
 }
 
 /* tables 
