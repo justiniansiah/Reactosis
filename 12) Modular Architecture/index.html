@@ -1,10 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" >
-	<style>
+	<!--<style>
 		table {border-collapse: collapse;}
 		th {border: 1px solid black;padding:5px;text-align:center;}
 		td {border: 1px solid black;padding:5px;text-align:left;}
-	</style> 
+	</style> -->
 
 	<head>
 		<!-- Add a suitable title for this page -->
@@ -28,6 +28,79 @@
 
 
 	<body>
+		<h2>Modular Architecture</h2>
+
+		<table>
+			<tr>
+				<th>Abstract Module</th>
+				<th>Functions</th>
+			</tr>
+			<tr>
+				<td>Player</td>
+				<td>Interacts with the modules</td>
+			</tr>
+			<tr>
+				<td>Movement Module</td>
+				<td>Determines the movement of individual players around the board and tracks the location of the players on the board at the end of the turn.</td>
+			</tr>
+			<tr>
+				<td>Objective Tracking Module</td>
+				<td>Tracks how close each play is to their respective goals (the number of tokens each player has)</td>
+			</tr>
+			<tr>
+				<td>Chance Card Module</td>
+				<td>Enforces actions which influences the player’s pieces, cards and/or tokens as well as allowing players to interact with each other.</td>
+			</tr>
+			<tr>
+				<td>Mission Square Module</td>
+				<td>Interacts with player pieces. Allows players to trade in cards for tokens if a criteria is met.</td>
+			</tr>
+			<tr>
+				<td>Board Module</td>
+				<td>Governs the actions of the players in accordance to the game rules perimeters set on the board</td>
+			</tr>
+
+		</table>
+		<div>
+			<table>
+			<tr>
+				<th>Event</th>
+				<th>From</th>
+				<th>To</th>
+				<th>Message</th>
+			</tr>
+			<tr>
+				<td>Player lands on Chance tile</td>
+				<td>Board Module</td>
+				<td>Chance Card Module</td>
+				<td>Board module informs chance card module that Player X should draw a card from it</td>
+			</tr>
+			<tr>
+				<td>Player lands on Mission square</td>
+				<td>Board Module</td>
+				<td>Mission Square Module</td>
+				<td>Board module informs Mission Square modules that a player has arrived on the square</td>
+			</tr>
+			<tr>
+				<td>Player fulfils criteria on Mission Square</td>
+				<td>Mission Square Module</td>
+				<td>Objective Tracking Module</td>
+				<td>Mission Square module notifies Objective Tracking module that Player X has fulfilled a certain sub-objective</td>
+			</tr>
+			<tr>
+				<td>Player rolls dice</td>
+				<td>Movement module</td>
+				<td>Board Module</td>
+				<td>Movement module notifies board module of the number of steps Player X has to take on the board</td>
+			</tr>
+			<tr>
+				<td>Player clears objective</td>
+				<td>Objective Tracking Module</td>
+				<td>Player</td>
+				<td>Objective Tracking module informs Player X that he has won the game</td>
+			</tr>
+		</table>
+		</div>
 
 		<!--
 		<button	type="button" class = "btn-left nextbtn_left" onClick="location.href='../11) Product Family and Release Schedule/index.html'"><span>Prev</span></button>
