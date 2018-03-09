@@ -65,7 +65,9 @@ td{
   font-size: 15px;
 }
 
-
+#conceptselection_btn{
+  top:2rem;
+}
 
 .nextbtn_left{
   width:100px;
