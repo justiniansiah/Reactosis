@@ -1,10 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" >
-	<style>
-		table {border-collapse: collapse;}
-		th {border: 1px solid black;padding:5px;text-align:center;}
-		td {border: 1px solid black;padding:5px;text-align:left;}
-	</style> 
 
 	<head>
 		<!-- Add a suitable title for this page -->
@@ -28,10 +23,108 @@
 
 
 	<body>
-		<button	type="button" class = "btn-left nextbtn_left" onClick="location.href='../index.html'"><span>Prev</span></button>
+		<button	type="button" class = "btn-left nextbtn_left" onClick="location.href='../index.html'"><span>Back</span></button>
 
 		<div class = "divcenter">
 			<h2>Use Cases and Scenarios</h2>
+		</div>
+
+		<div class="wrapper">
+			<div class ="container">
+				<h3>Nominal</h3>
+				<table class="table-hover">
+					<tr id="T1 Header">
+						<th>Use Cases</th>
+						<th>Priority</th>
+					</tr>
+
+					<tr id="T1 R1">
+						<td>Player fulfills mission (Players discuss and agree on the validity)</td>
+						<td style="text-align: center;">H</td>
+					</tr>
+
+					<tr id="T1 R2">
+						<td>Players pack up and keep the game</td>
+						<td style="text-align: center;">L</td>
+					</tr>
+
+					<tr id="T1 R3">
+						<td>Player pieces together current element tokens collected</td>
+						<td style="text-align: center;">H</td>
+					</tr>
+
+					<tr id="T1 R4">
+						<td>Player lands on a chance square (eg. that asks to discard a toxic element)</td>
+						<td style="text-align: center;">H</td>
+					</tr>
+
+					<tr id="T1 R5">
+						<td>The game instructions and initial cards are given out before the game starts</td>
+						<td style="text-align: center;">H</td>
+					</tr>
+
+					<tr id="T1 R6">
+						<td>Players accomplish objective by building up the 3D compound</td>
+						<td style="text-align: center;">H</td>
+					</tr>
+
+					<tr id="T1 R7">
+						<td>Player chooses his player piece</td>
+						<td style="text-align: center;">L</td>
+					</tr>
+				</table>
+			</div>
+
+			<div class ="container">
+				<h3>Off-Nominal</h3>
+				<table class="table-hover">
+					<tr id="T2 Header">
+						<th>Use Cases</th>
+						<th>Priority</th>
+					</tr>
+
+					<tr id="T2 R1">
+						<td>Game is paused for long period (more than 24 hours)</td>
+						<td style="text-align: center;">L</td>
+					</tr>
+
+					<tr id="T2 R2">
+						<td>Player pieces misplaced</td>
+						<td style="text-align: center;">M</td>
+					</tr>
+
+					<tr id="T2 R3">
+						<td>Player is colorblind </td>
+						<td style="text-align: center;">M</td>
+					</tr>
+
+					<tr id="T2 R4">
+						<td>Board is flimsy </td>
+						<td style="text-align: center;">L</td>
+					</tr>
+
+					<tr id="T2 R5">
+						<td>Player spills water onto the board</td>
+						<td style="text-align: center;">L</td>
+					</tr>
+
+					<tr id="T2 R6">
+						<td>One player leaves the game half-way</td>
+						<td style="text-align: center;">H</td>
+					</tr>
+
+					<tr id="T2 R7">
+						<td>Player able to fulfill the mission but does not need any of the tokens available</td>
+						<td style="text-align: center;">H</td>
+					</tr>
+
+					<tr id="T2 R8">
+						<td>Player does not have any element card to fulfill the mission</td>
+						<td style="text-align: center;">M</td>
+					</tr>
+				</table>
+
+			</div>
 		</div>
 		<!--
 		<button	type="button" class = "btn-left nextbtn_left" onClick="location.href='../04) Operational Concept/index.html'"><span>Prev</span></button>

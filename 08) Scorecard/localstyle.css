@@ -1,5 +1,7 @@
 /* Score Card CSS */
 
+/*headers
+*****************/
 h2{
   padding:auto;
   margin-top:10px;
@@ -7,19 +9,64 @@ h2{
   font-size:40px;
 }
 
+p{
+  text-align: justify;
+}
+
+/* containers
+****************/
 .divcenter{
   text-align: center;
 }
 
-.nextbtn_right{
+.wrapper{
+  display:flex;
+  overflow-x: auto;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1300px;
+}
+
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  padding:0px 100px;
+  max-width: 700px;
+}
+
+#tablecontainer{
+  margin-top: 3rem;
+  max-width: 400px;
+}
+
+/* tables 
+*****************/
+
+th{
+  border:solid 1px;
+  background-color: #fdf6b4;
+}
+
+td{
+  min-width: 200px;
+  text-align: center;
+}
+
+
+/* buttons 
+**************/
+.nextbtn_right{ 
   position: absolute;
-  width:100px;
-  top:80%;
-  right:5rem;
+  width:300px;
+  right:10px;
   background-color: transparent;
   color: #000;
   font-family: "Arial Black", Gadget, sans-serif;
-  font-size: 30px;
+  font-size: 15px;
+}
+
+#conceptselection_btn{
+  top:2rem;
 }
 
 .nextbtn_left{
