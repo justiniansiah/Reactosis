@@ -42,12 +42,18 @@ table {
 }
 
 
+
 /* containers
 ****************/
 .divcenter{
   text-align: center;
 }
-
+.divcenterBody{
+  text-align: left;
+  display: inline-block;
+  font-size: 20px;
+  width: 50%
+}
 .wrapper{
   display:flex;
   overflow-x: auto;
