@@ -1,5 +1,7 @@
 /* Modular Architecture CSS */
 
+/*headers
+*****************/
 h2{
   padding:auto;
   margin-top:10px;
@@ -7,10 +9,52 @@ h2{
   font-size:40px;
 }
 
+/* tables
+****************/
+table{
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  word-wrap: break-word;
+}
+
+th{
+  border: 1px solid black;
+  padding:15px;
+  text-align:center;
+  background-color: #fdf6b4;
+}
+
+td{
+  border: 1px solid black;
+  padding:10px;
+  text-align:left;
+}
+
+.table-hover tbody tr:hover td{
+  background-color: #fced69;
+}
+
+/* containers
+****************/
 .divcenter{
   text-align: center;
 }
 
+.wrapper{
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container{
+  top: 10px;
+  margin-bottom: 30px;
+}
+
+/* buttons 
+**************/
 .nextbtn_right{
   position: absolute;
   width:100px;
@@ -31,19 +75,3 @@ h2{
   font-family: "Arial Black", Gadget, sans-serif;
   font-size: 20px;
 }
-table{
-  border: 1px solid black;
-  border-collapse: collapse;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  word-wrap: break-word;
-
-}
-th{
-  border: 1px solid black;padding:15px;text-align:center;
-
-}
-td{border: 1px solid black;padding:10px;text-align:left;}
-
-div{margin-top: 10px}
