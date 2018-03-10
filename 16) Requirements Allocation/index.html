@@ -7,7 +7,7 @@
 		<meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	    <meta name="description" content="ESA Project">
-	    <meta name="author" content="Justinian">
+	    <meta name="author" content="Justinian and Justin">
 	    <link rel="icon" href="../static/logos/reactosis.png">
 
 		<!-- Stylesheet CSS -->
@@ -17,40 +17,69 @@
 
 		<!-- Javascript Js -->
 		<script src="../static/jquery-easyui/jquery.min.js"></script>
-		<script src="../static/jquery.easyui.min.js"></script>
+		<script src="../static/jquery-easyui/jquery.easyui.min.js"></script>
+		<script type="text/javascript" src="localscript.js"></script>
 	</head>
 
 
 	<body>
 		<button	type="button" class = "btn-left nextbtn_left" onClick="location.href='../index.html'"><span>Back</span></button>
 
+		<button	type="button" class = "btn-left nextbtn_left" id="designrules_btn" onClick="location.href='../13) Design Rules/index.html'"><span>Design Rules</span></button>
+
 		<div class = "divcenter">
 			<h2>Requirements Allocation</h2>
 		</div>
-		<div align="center">
-			<div class="divcenterBody">
-				<ol type="1">
-					<li>Board designer shall create a board that is compact.</li><br/>
-					<li>Board designer shall create a board that is waterproof.</li><br/>
-					<li>Board designer shall create a board that weighs more than 0.5kg.</li><br/>
-					<li>Artifact designer shall design the pieces such that they are not a choking hazard.</li><br/>
-					<li>Artifact designer shall ensure that there are extra board pieces (player pieces and tokens).</li><br/>
-					<li>Artifact designer shall ensure all the game pieces have no sharp edges.</li><br/>
-					<li>Artifact designer material cost shall not exceed SGD 150.</li><br/>
-					<li>Board designer material cost shall not exceed SGD 50. </li><br/>
-					<li>Artifact designer shall produce board pieces that are recyclable.</li><br/>
-					<li>Artifact designer shall ensure that the tokens shall be sufficient for players to form the objective molecule, with a total quantity of at least 60 tokens.</li><br/>
-					<li>Artifact designer shall ensure that the token connectors are sufficient for players to piece the tokens together, with a total quantity of at least 100 connectors.</li><br/>
-					<li>Logic designer shall come up with content that ensures that a single round of the game takes at most 1 hour to complete, with 90% confidence.</li><br/>
-					<li>Logic designer and board designer shall ensure that there are at least 30 squares on the board.
-					</li><br/>
+		<div class="wrapper">
+			<div class="container" id="subteams">
+				<h3 id ="title">Sub-Teams</h3>
+				<span id="desc">Mouse over to see the requirements allocated to each subteam!</span> 
 
-				</ol>
-				
+				<ul class="subteamlist">
+					<li id="ld" onmouseover="ld_in()" onmouseout="ld_out()">Logic Designers</li>
+					<li id="ad" onmouseover="ad_in()" onmouseout="ad_out()">Artifacts Designers</li>
+					<li id="bd" onmouseover="bd_in()" onmouseout="bd_out()">Board Designers</li>					
+				</ul>	
 			</div>
+
+			<div class="container" id="main_table">
+				<ol type="1">
+					<li class="bd">Board designer shall create a board that is compact.</li><br/>
+					<li class="bd">Board designer shall create a board that is waterproof.</li><br/>
+					<li class="bd">Board designer shall create a board that weighs more than 0.5kg.</li><br/>
+					<li class="ad">Artifact designer shall design the pieces such that they are not a choking hazard.</li><br/>
+					<li class="ad">Artifact designer shall ensure that there are extra board pieces (player pieces and tokens).</li><br/>
+					<li class="ad">Artifact designer shall ensure all the game pieces have no sharp edges.</li><br/>
+					<li class="ad">Artifact designer material cost shall not exceed SGD 150.</li><br/>
+					<li class="bd">Board designer material cost shall not exceed SGD 50. </li><br/>
+					<li class="ad">Artifact designer shall produce board pieces that are recyclable.</li><br/>
+					<li class="ad">Artifact designer shall ensure that the tokens shall be sufficient for players to form the objective molecule, with a total quantity of at least 60 tokens.</li><br/>
+					<li class="ad">Artifact designer shall ensure that the token connectors are sufficient for players to piece the tokens together, with a total quantity of at least 100 connectors.</li><br/>
+					<li class="ld">Logic designer shall come up with content that ensures that a single round of the game takes at most 1 hour to complete, with 90% confidence.</li><br/>
+					<li class="bd ld">Logic designer and board designer shall ensure that there are at least 30 squares on the board.
+					</li><br/>
+				</ol>
+			</div>
+
 			
 		</div>
 
+		<script>
+			function bd_in(){
+    var a = document.getElementsByClassName("bd");
+    var i;
+    for (i = 0; i < a.length; i++) {
+      a[i].style.background = "#fbed6a";
+    }
+}
+function bd_out(){
+    var a = document.getElementsByClassName("bd");
+    var i;
+    for (i = 0; i < a.length; i++) {
+      a[i].style.background = "#fefad6";
+    }
+}
+		</script>
 	</body>
 
 </html>
