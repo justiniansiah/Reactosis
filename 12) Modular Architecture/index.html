@@ -13,7 +13,7 @@
 		<meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	    <meta name="description" content="ESA Project">
-	    <meta name="author" content="Justinian">
+	    <meta name="author" content="Justin Ang">
 	    <link rel="icon" href="../static/logos/reactosis.png">
 
 		<!-- Stylesheet CSS -->
@@ -28,85 +28,91 @@
 
 
 	<body>
-		<h2>Modular Architecture</h2>
+		<button	type="button" class = "btn-left nextbtn_left" onClick="location.href='../index.html'"><span>Prev</span></button></body>
 
-		<table>
-			<tr>
-				<th>Abstract Module</th>
-				<th>Functions</th>
-			</tr>
-			<tr>
-				<td>Player</td>
-				<td>Interacts with the modules</td>
-			</tr>
-			<tr>
-				<td>Movement Module</td>
-				<td>Determines the movement of individual players around the board and tracks the location of the players on the board at the end of the turn.</td>
-			</tr>
-			<tr>
-				<td>Objective Tracking Module</td>
-				<td>Tracks how close each play is to their respective goals (the number of tokens each player has)</td>
-			</tr>
-			<tr>
-				<td>Chance Card Module</td>
-				<td>Enforces actions which influences the player’s pieces, cards and/or tokens as well as allowing players to interact with each other.</td>
-			</tr>
-			<tr>
-				<td>Mission Square Module</td>
-				<td>Interacts with player pieces. Allows players to trade in cards for tokens if a criteria is met.</td>
-			</tr>
-			<tr>
-				<td>Board Module</td>
-				<td>Governs the actions of the players in accordance to the game rules perimeters set on the board</td>
-			</tr>
-
-		</table>
-		<div>
-			<table>
-			<tr>
-				<th>Event</th>
-				<th>From</th>
-				<th>To</th>
-				<th>Message</th>
-			</tr>
-			<tr>
-				<td>Player lands on Chance tile</td>
-				<td>Board Module</td>
-				<td>Chance Card Module</td>
-				<td>Board module informs chance card module that Player X should draw a card from it</td>
-			</tr>
-			<tr>
-				<td>Player lands on Mission square</td>
-				<td>Board Module</td>
-				<td>Mission Square Module</td>
-				<td>Board module informs Mission Square modules that a player has arrived on the square</td>
-			</tr>
-			<tr>
-				<td>Player fulfils criteria on Mission Square</td>
-				<td>Mission Square Module</td>
-				<td>Objective Tracking Module</td>
-				<td>Mission Square module notifies Objective Tracking module that Player X has fulfilled a certain sub-objective</td>
-			</tr>
-			<tr>
-				<td>Player rolls dice</td>
-				<td>Movement module</td>
-				<td>Board Module</td>
-				<td>Movement module notifies board module of the number of steps Player X has to take on the board</td>
-			</tr>
-			<tr>
-				<td>Player clears objective</td>
-				<td>Objective Tracking Module</td>
-				<td>Player</td>
-				<td>Objective Tracking module informs Player X that he has won the game</td>
-			</tr>
-		</table>
+		<div class="divcenter">
+			<h2>Modular Architecture</h2>
 		</div>
 
-		<!--
-		<button	type="button" class = "btn-left nextbtn_left" onClick="location.href='../11) Product Family and Release Schedule/index.html'"><span>Prev</span></button>
+		<div class="wrapper">
+			<div class="container">
+				<h3>Functions of each module</h3>
+				<table id="functions" class="table-hover">
+					<tr id="function_header">
+						<th>Abstract Module</th>
+						<th>Functions</th>
+					</tr>
+					<tr>
+						<td>Player</td>
+						<td>Interacts with the modules</td>
+					</tr>
+					<tr>
+						<td>Movement Module</td>
+						<td>Determines the movement of individual players around the board and tracks the location of the players on the board at the end of the turn.</td>
+					</tr>
+					<tr>
+						<td>Objective Tracking Module</td>
+						<td>Tracks how close each play is to their respective goals (the number of tokens each player has)</td>
+					</tr>
+					<tr>
+						<td>Chance Card Module</td>
+						<td>Enforces actions which influences the player’s pieces, cards and/or tokens as well as allowing players to interact with each other.</td>
+					</tr>
+					<tr>
+						<td>Mission Square Module</td>
+						<td>Interacts with player pieces. Allows players to trade in cards for tokens if a criteria is met.</td>
+					</tr>
+					<tr>
+						<td>Board Module</td>
+						<td>Governs the actions of the players in accordance to the game rules perimeters set on the board</td>
+					</tr>
+				</table>
+			</div>
 
-		<button	type="button" class = "btn-right nextbtn_right" onClick="location.href='../13) Design Rules/index.html'"><span>Next</span></button>
-		-->
+			<div class="container">
+				<h3>Functions of each module</h3>
+				<table id="message_flow" class="table-hover">
+					<tr id="message_flow_header">
+						<th>Event</th>
+						<th>From</th>
+						<th>To</th>
+						<th>Message</th>
+					</tr>
+					<tr>
+						<td>Player lands on Chance tile</td>
+						<td>Board Module</td>
+						<td>Chance Card Module</td>
+						<td>Board module informs chance card module that Player X should draw a card from it</td>
+					</tr>
+					<tr>
+						<td>Player lands on Mission square</td>
+						<td>Board Module</td>
+						<td>Mission Square Module</td>
+						<td>Board module informs Mission Square modules that a player has arrived on the square</td>
+					</tr>
+					<tr>
+						<td>Player fulfils criteria on Mission Square</td>
+						<td>Mission Square Module</td>
+						<td>Objective Tracking Module</td>
+						<td>Mission Square module notifies Objective Tracking module that Player X has fulfilled a certain sub-objective</td>
+					</tr>
+					<tr>
+						<td>Player rolls dice</td>
+						<td>Movement module</td>
+						<td>Board Module</td>
+						<td>Movement module notifies board module of the number of steps Player X has to take on the board</td>
+					</tr>
+					<tr>
+						<td>Player clears objective</td>
+						<td>Objective Tracking Module</td>
+						<td>Player</td>
+						<td>Objective Tracking module informs Player X that he has won the game</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+
 	</body>
-	<body><button	type="button" class = "btn-left nextbtn_left" onClick="location.href='../index.html'"><span>Prev</span></button></body>
+	<body>
 </html>
