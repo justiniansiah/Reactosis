@@ -1,4 +1,4 @@
-/* Resource Allocation CSS */
+/* Requirements Allocation CSS */
 /*headers
 *****************/
 h2{
@@ -13,22 +13,6 @@ h3{
   margin-bottom: 20px;
 }
 
-
-
-
-.divcenterBody{
-  text-align: left;
-  display: inline-block;
-  font-size: 20px;
-  width: 50%;
-}
-=======
-#desc{
-  margin-left: 2px;
-  font-size: 13px;
-  max-width:30px;
-  overflow-wrap: normal;
-}
 
 /* Lists
 *****************/
@@ -103,6 +87,13 @@ table {
 
 #main_table{
   margin-left:100px;
+}
+
+#desc{
+  margin-left: 2px;
+  font-size: 13px;
+  max-width:30px;
+  overflow-wrap: normal;
 }
 
 /* buttons 
