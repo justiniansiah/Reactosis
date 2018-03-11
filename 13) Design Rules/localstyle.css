@@ -19,7 +19,7 @@ h3{
 }
 
 .wrapper{
-  display:flex;
+  display:block;
   overflow-x: auto;
   margin-left: auto;
   margin-right: auto;
@@ -31,27 +31,35 @@ h3{
   margin-right: auto;
   padding:0px 100px;
   max-width: 700px;
+  margin-bottom: 2rem;
 }
 
 #tablecontainer{
-  margin-top: 3rem;
-  max-width: 400px;
+  margin-top: 0rem;
+  max-width: 600px;
 }
 
 
 /* tables 
 *****************/
 th{
-  min-width: 70px;
+  min-width: 200px;
   border:solid 1px;
   background-color: #fdf6b4;
   text-align:left;
+  padding:5px;
+}
+
+.leftcol{
+  text-align: center;
+  font-weight: bold;
 }
 
 td{
-  height: 50px;
-  border: 1px solid black;
+  min-width: 300px;
+  border: 1px solid;
   padding:5px;
+  padding-right: 10px;
   text-align:left;
 }
 
@@ -59,40 +67,32 @@ table {
   border-collapse: collapse;
 }
 
-.table-hover tbody tr:hover td{
+.table-hover tr:hover td{
   background-color: #fced69;
 }
 
-
-/* containers
+/* lists
 ****************/
-.divcenter{
-  text-align: center;
+ol li{
+  margin-bottom: 15px;
 }
 
-.wrapper{
-  display:flex;
-  overflow-x: auto;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1300px;
+ul li{
+  margin-bottom: 15px;
 }
 
-.container{
-}
 
 /* buttons 
 **************/
 
-.nextbtn_right{
+.nextbtn_right{ 
   position: absolute;
-  width:100px;
-  top:80%;
-  right:5rem;
+  width:350px;
+  right:10px;
   background-color: transparent;
   color: #000;
   font-family: "Arial Black", Gadget, sans-serif;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .nextbtn_left{

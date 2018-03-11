@@ -4,7 +4,7 @@
 *****************/
 li{  
   list-style:none;
-  padding:10px 15px;
+  padding: 10px 15px;
   border:solid 1px;
 }
 
@@ -17,13 +17,13 @@ li:hover{
 *****************/
 h2{
   padding:auto;
-  margin-top:10px;
+  margin-top: 10px;
   margin-left: 1rem;
-  font-size:40px;
+  font-size: 40px;
 }
 
 h3{
-  font-size:25px;
+  font-size: 25px;
   min-width: 135px;
 }
 
@@ -34,7 +34,7 @@ table {
 }
 
 th{
-  padding:5px;
+  padding: 5px;
   text-align:center;
   min-width: 70px;
   border:solid 1px;
@@ -45,7 +45,7 @@ th{
 td{
   border: 1px solid black;
   padding:5px;
-  text-align:left;
+  text-align: left;
   height: 50px;
   transition:.25s;
 }
@@ -57,7 +57,7 @@ td{
 }
 
 .wrapper{
-  display:flex;
+  display: flex;
   overflow-x: auto;
   margin-left: auto;
   margin-right: auto;
@@ -76,29 +76,29 @@ td{
 
 #contentwrapper{
   margin-left: 20px;
-  padding:10px 30px;
+  padding: 10px 30px;
   max-width: 80vw;
   width: 70vw;
-  overflow-y:auto;
+  overflow-y: auto;
   /*background-color: #fefce6;
   border:solid 1px;*/
   max-height: 100vh;
-  overflow-y:auto;
+  overflow-y: auto;
 }
 
 #actualcontent{
   max-width: 650px;
-  margin-left:auto;
-  margin-right:auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* buttons 
 **************/
 .nextbtn_right{
   position: absolute;
-  width:100px;
-  top:80%;
-  right:5rem;
+  width: 100px;
+  top: 80%;
+  right: 5rem;
   background-color: transparent;
   color: #000;
   font-family: "Arial Black", Gadget, sans-serif;
@@ -106,8 +106,8 @@ td{
 }
 
 .nextbtn_left{
-  width:100px;
-  left:1rem;
+  width: 100px;
+  left: 1rem;
   margin-bottom: 1px;
   background-color: transparent;
   color: #000;

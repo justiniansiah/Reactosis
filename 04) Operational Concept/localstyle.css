@@ -1,4 +1,7 @@
 /* Operational Concept CSS */
+
+/*headers
+*****************/
 h2{
   padding:auto;
   margin-top:10px;
@@ -6,6 +9,8 @@ h2{
   font-size:40px;
 }
 
+/* containers
+****************/
 .divcenter{
   text-align: center;
 }
@@ -15,6 +20,8 @@ h2{
   margin-left:100px;
 }
 
+/* buttons 
+**************/
 .nextbtn_left{
   width:100px;
   left:1rem;
@@ -25,6 +32,8 @@ h2{
   font-size: 20px;
 }
 
+/* lightbox 
+**************/
 a.lightbox img {
 height: 80vh;/*600px;*/
 border: none;
