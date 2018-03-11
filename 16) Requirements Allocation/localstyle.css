@@ -10,35 +10,10 @@ h2{
 
 h3{
   font-size:25px;
-  margin-bottom: 20px;
 }
+.divcenter{
+  text-align: center;
 
-
-#desc{
-  margin-left: 2px;
-  font-size: 13px;
-  max-width:30px;
-  overflow-wrap: normal;
-}
-
-/* Lists
-*****************/
-.subteamlist{
-  margin:20px 0px 0px 0px;
-  margin-right: 35px;
-}
-.subteamlist li{  
-  background-color: #fafafa;
-  list-style:none;
-  padding:10px 15px;
-  border:solid 1px;
-  font-size: 15px;
-}
-
-.subteamlist li:hover{
-  background: #fbed6a;
-  border:solid 2px;
-=======
 
 }
 .divcenterBody{
@@ -47,7 +22,6 @@ h3{
   font-size: 20px;
   width: 50%;
 }
-
 
 /* tables 
 *****************/
