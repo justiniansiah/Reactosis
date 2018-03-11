@@ -13,6 +13,15 @@ h3{
   margin-bottom: 20px;
 }
 
+
+
+}
+.divcenterBody{
+  text-align: left;
+  display: inline-block;
+  font-size: 20px;
+  width: 50%;
+=======
 #desc{
   margin-left: 2px;
   font-size: 13px;
@@ -37,6 +46,7 @@ h3{
 .subteamlist li:hover{
   background: #fbed6a;
   border:solid 2px;
+
 }
 
 /* tables 
