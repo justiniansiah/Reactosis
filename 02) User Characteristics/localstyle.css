@@ -9,6 +9,12 @@ h2{
   font-size:40px;
 }
 
+#note_text{
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
 /* containers
 ****************/
 .container_table1{
@@ -16,19 +22,21 @@ h2{
   max-height: 50vh;
   margin-left:10px;
 }
+
 .container_table2{
   margin-left:10px;
   width: 1600px;
   max-height: 50vh;
   overflow-y: auto;
-  overflow-x: visible;
+  overflow-x: visible; 
+  border-bottom:solid 1px;
 }
 
 .container_text{
   width: auto;
   max-width: 1000px;
   margin-left:20px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .divcenter{
