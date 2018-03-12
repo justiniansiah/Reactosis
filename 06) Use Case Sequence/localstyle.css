@@ -10,7 +10,7 @@ h2{
 }
 
 h3{
-  background-color: #fcf39c;
+  background-color: #fbed6a;
   padding: 5px 5px;
 }
 
@@ -41,6 +41,8 @@ p{
 #tableofcontent{
   max-width: 200px; 
   margin-left: 10px;
+  background-color: #fdf6b4;
+  padding-top:5px;
 }
 
 #contentwrapper{
