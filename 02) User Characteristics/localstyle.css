@@ -97,13 +97,13 @@ td{
   padding: 5px;
   text-align:left;
 }
-/***********************/
+/**********************
 .table-hover tbody tr:hover td{
   background-color: #fced69;
-}
+}*/
 
-.col1:hover .col1{
-  background-color: #fced69
+.hovercolumn {
+  background-color: #fced69;
 }
 
 .animate-opacity{
