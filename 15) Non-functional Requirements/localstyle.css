@@ -35,6 +35,13 @@ table {
   border-collapse: collapse;
 }
 
+/* lists
+****************/
+li {
+  padding:10px;
+  margin:5px;
+}
+
 .list-hover li:hover {
   background-color: #fced69;
 }
