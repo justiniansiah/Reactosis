@@ -15,7 +15,7 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
 
-    opacity: 0.85;
+    /*opacity: 0.85;*/
 }
 
 .title {
@@ -26,19 +26,20 @@ body, html {
   font: "Lato", sans-serif;
   text-align: center;
   color: #000;
-  font-size: 30px;
+  font-size: 36px;
   letter-spacing: 10px;
 }
 
 .title span.border {
-  background-color: #111;
-  opacity: 0.75;
+  /*background-color: #333;
+  opacity: 0.75;*/
   color: #fff;
   padding: 18px;
 }
 
 .container {
-  background-color: #111;
+  /*background-color: #333;
+  opacity: 0.75;*/
   width: auto;
   max-width: 300px;
   padding: 5px 15px;
