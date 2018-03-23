@@ -28,8 +28,36 @@
 		<div class="divcenter">
 			<h2>Influence Diagrams</h2>
 			<p>Click image to zoom</p>
+
+			<div class="imgContainer">
+				<div class="container">
+					<h3>As Is</h3>
+					<img class="myImg" src="As Is.png" alt="As Is" width="500" height="350">
+				</div>
+
+				<div class = "container">
+					<h3>To Be</h3>
+					<img class="myImg" src="To Be.png" alt="To Be" width="500" height="350">
+				</div>
+			</div>
+
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+
+				<!-- The Close Button -->
+				<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+				<!-- Modal Content (The Image) -->
+				<img class="modal-content" id="img01">
+
+				<!-- Modal Caption (Image Text) -->
+				<div id="caption"></div>
+
+			</div>
 		</div>
 
+
+<!--
 		<div class="imgWrapper">
 			<div class="imgContainer">
 				<h3>As-Is</h3>
@@ -40,8 +68,7 @@
 				<img src="To Be v2.png" alt="To-Be" style="width:600px">
 			</div>
 		</div>
-
-		
+-->
 		
 	</body>
 </html>

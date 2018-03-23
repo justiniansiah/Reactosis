@@ -1,4 +1,4 @@
-/* Javascript for 09 Integrated Concepts */
+/* Javascript for 03 Influence Diagrams */
 
 $(document).ready(function(){
   // Get the modal
